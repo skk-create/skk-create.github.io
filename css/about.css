@@ -1,0 +1,37 @@
+/* Venus — thick, near-uniform cloud tops, so deliberately no extra gradient texture layer.
+   Drop img/textures/venus.jpg in and it's used automatically (see main.css .full-planet). */
+:root {
+  --p-texture: url('../img/textures/venus.jpg');
+  --p-light: #fff3da;
+  --p-mid: #f0cf8e;
+  --p-dark: #cf9f5f;
+  --p-shadow: #7a5a30;
+  --p-glow: rgba(240, 207, 142, 0.25);
+  --p-glow-soft: rgba(240, 207, 142, 0.12);
+}
+
+/* ---------- "mission log" timeline ---------- */
+.log-timeline {
+  position: relative;
+  padding-left: 28px;
+  border-left: 1px solid rgba(238,242,251,0.14);
+  margin-bottom: 40px;
+}
+.log-entry { position: relative; padding-bottom: 36px; }
+.log-entry:last-child { padding-bottom: 0; }
+.log-marker {
+  position: absolute;
+  left: -33px; top: 4px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--p-mid);
+  box-shadow: 0 0 0 3px var(--bg-deep), 0 0 10px 2px var(--p-glow);
+}
+.log-tag {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--p-mid);
+  margin: 0 0 4px;
+}
+.log-title { font-size: 17px; margin: 0 0 8px; color: var(--text-bright); }
+.log-text { color: var(--text-dim); font-size: 14px; line-height: 1.7; margin: 0; }
