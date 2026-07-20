@@ -4,8 +4,8 @@
    light source, orbit-able with the mouse, and clickable (jumps to
    contact.html, same as the CSS version does today).
    ============================================================ */
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js';
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/controls/OrbitControls.js';
 
 /* ---------- scene / camera / renderer ---------- */
 const scene = new THREE.Scene();
