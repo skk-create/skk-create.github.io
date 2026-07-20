@@ -1,0 +1,87 @@
+/* Mercury — closest to the sun, fastest orbit: fitting home for a quick,
+   no-nonsense systems readout of what you actually work with.
+   Drop img/textures/mercury.jpg in and it's used automatically. */
+:root {
+  --p-texture: url('../img/textures/mercury.jpg');
+  --p-light: #d7d3ca;
+  --p-mid: #9b968c;
+  --p-dark: #656058;
+  --p-shadow: #3a3630;
+  --p-glow: rgba(155, 150, 140, 0.22);
+  --p-glow-soft: rgba(155, 150, 140, 0.1);
+}
+
+/* ---------- "system diagnostics" skill bars ---------- */
+.diag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.diag-card {
+  border: 1px solid rgba(238,242,251,0.14);
+  padding: 22px;
+}
+.diag-title {
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--p-mid);
+  margin: 0 0 18px;
+}
+.diag-skill { margin-bottom: 16px; }
+.diag-skill:last-child { margin-bottom: 0; }
+
+.diag-skill-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.diag-skill-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-bright);
+}
+.diag-skill-name i { font-size: 17px; }
+.diag-years {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--p-mid);
+  white-space: nowrap;
+}
+
+.diag-skill-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-bright);
+}
+.diag-skill-name i { font-size: 17px; }
+.diag-years {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--p-mid);
+  white-space: nowrap;
+}
+
+.diag-bar {
+  height: 4px;
+  background: rgba(238,242,251,0.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.diag-bar-fill {
+  height: 100%;
+  background: var(--p-mid);
+  border-radius: 2px;
+  transform-origin: left;
+  animation: fillBar 1s ease-out forwards;
+}
+@keyframes fillBar {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
