@@ -497,3 +497,28 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   color: var(--text-dim);
   text-align: center;
 }
+
+/* De navigatiebalk: zet logo links en menu rechts */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+/* Maak het logo hier kleiner (pas '50px' aan als je hem groter of kleiner wilt) */
+.logo-img {
+  height: 50px; 
+  width: auto;
+  display: block;
+}
+
+/* Het menu netjes Naast elkaar zetten */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Ruimte tussen de menu-items */
+  margin: 0;
+  padding: 0;
+}
