@@ -1,0 +1,156 @@
+diff --git a/css/three-demo.css b/css/three-demo.css
+new file mode 100644
+index 0000000..b698f8b
+--- /dev/null
++++ b/css/three-demo.css
+@@ -0,0 +1,20 @@
++/* Page-specific styles for the Three.js proof-of-concept page. */
++body {
++  height: 100%;
++  overflow: hidden;
++}
++canvas {
++  display: block;
++}
++#info {
++  position: fixed;
++  top: 18px;
++  left: 22px;
++  z-index: 10;
++  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
++  color: rgba(235, 240, 250, 0.6);
++  font-size: 12px;
++  letter-spacing: 1.5px;
++  text-transform: uppercase;
++  pointer-events: none;
++}
+diff --git a/img/README.txt b/img/readme.txt
+similarity index 100%
+rename from img/README.txt
+rename to img/readme.txt
+diff --git a/js/skills.js b/js/skills.js
+index 79f9239..4db007a 100644
+--- a/js/skills.js
++++ b/js/skills.js
+@@ -1 +1,4 @@
+ // Page-specific behavior for the Skills (Mercury) page goes here.
++document.querySelectorAll('.diag-bar-fill[data-fill]').forEach((bar) => {
++  bar.style.width = `${bar.dataset.fill}%`;
++});
+diff --git a/js/three-demo.js b/js/three-demo.js
+index 7dbb6b8..60615bc 100644
+--- a/js/three-demo.js
++++ b/js/three-demo.js
+@@ -4,8 +4,8 @@
+    light source, orbit-able with the mouse, and clickable (jumps to
+    contact.html, same as the CSS version does today).
+    ============================================================ */
+-import * as THREE from 'three';
+-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
++import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js';
++import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/controls/OrbitControls.js';
+ 
+ /* ---------- scene / camera / renderer ---------- */
+ const scene = new THREE.Scene();
+diff --git a/skills.html b/skills.html
+index 982653b..0c177ff 100644
+--- a/skills.html
++++ b/skills.html
+@@ -22,15 +22,15 @@
+         <h3 class="diag-title">Frontend</h3>
+         <div class="diag-skill">
+           <div class="diag-skill-head"><span>HTML &amp; CSS</span><span>95%</span></div>
+-          <div class="diag-bar"><div class="diag-bar-fill" style="width:95%"></div></div>
++          <div class="diag-bar"><div class="diag-bar-fill" data-fill="95"></div></div>
+         </div>
+         <div class="diag-skill">
+           <div class="diag-skill-head"><span>JavaScript</span><span>90%</span></div>
+-          <div class="diag-bar"><div class="diag-bar-fill" style="width:90%"></div></div>
++          <div class="diag-bar"><div class="diag-bar-fill" data-fill="90"></div></div>
+         </div>
+         <div class="diag-skill">
+           <div class="diag-skill-head"><span>React</span><span>80%</span></div>
+-          <div class="diag-bar"><div class="diag-bar-fill" style="width:80%"></div></div>
++          <div class="diag-bar"><div class="diag-bar-fill" data-fill="80"></div></div>
+         </div>
+       </div>
+ 
+@@ -38,15 +38,15 @@
+         <h3 class="diag-title">Backend</h3>
+         <div class="diag-skill">
+           <div class="diag-skill-head"><span>Node.js</span><span>75%</span></div>
+-          <div class="diag-bar"><div class="diag-bar-fill" style="width:75%"></div></div>
++          <div class="diag-bar"><div class="diag-bar-fill" data-fill="75"></div></div>
+         </div>
+         <div class="diag-skill">
+           <div class="diag-skill-head"><span>Python</span><span>70%</span></div>
+-          <div class="diag-bar"><div class="diag-bar-fill" style="width:70%"></div></div>
++          <div class="diag-bar"><div class="diag-bar-fill" data-fill="70"></div></div>
+         </div>
+         <div class="diag-skill">
+           <div class="diag-skill-head"><span>SQL</span><span>65%</span></div>
+-          <div class="diag-bar"><div class="diag-bar-fill" style="width:65%"></div></div>
++          <div class="diag-bar"><div class="diag-bar-fill" data-fill="65"></div></div>
+         </div>
+       </div>
+ 
+@@ -54,11 +54,11 @@
+         <h3 class="diag-title">Design</h3>
+         <div class="diag-skill">
+           <div class="diag-skill-head"><span>Figma</span><span>85%</span></div>
+-          <div class="diag-bar"><div class="diag-bar-fill" style="width:85%"></div></div>
++          <div class="diag-bar"><div class="diag-bar-fill" data-fill="85"></div></div>
+         </div>
+         <div class="diag-skill">
+           <div class="diag-skill-head"><span>UI / UX</span><span>80%</span></div>
+-          <div class="diag-bar"><div class="diag-bar-fill" style="width:80%"></div></div>
++          <div class="diag-bar"><div class="diag-bar-fill" data-fill="80"></div></div>
+         </div>
+       </div>
+ 
+@@ -66,11 +66,11 @@
+         <h3 class="diag-title">Tools</h3>
+         <div class="diag-skill">
+           <div class="diag-skill-head"><span>Git</span><span>90%</span></div>
+-          <div class="diag-bar"><div class="diag-bar-fill" style="width:90%"></div></div>
++          <div class="diag-bar"><div class="diag-bar-fill" data-fill="90"></div></div>
+         </div>
+         <div class="diag-skill">
+           <div class="diag-skill-head"><span>Docker</span><span>60%</span></div>
+-          <div class="diag-bar"><div class="diag-bar-fill" style="width:60%"></div></div>
++          <div class="diag-bar"><div class="diag-bar-fill" data-fill="60"></div></div>
+         </div>
+       </div>
+     </div>
+diff --git a/three-demo.html b/three-demo.html
+index 94225bb..4be3872 100644
+--- a/three-demo.html
++++ b/three-demo.html
+@@ -4,25 +4,8 @@
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Three.js Proof of Concept — Sun + Mars</title>
+-<style>
+-  html, body { margin: 0; height: 100%; overflow: hidden; background: #05070d; }
+-  canvas { display: block; }
+-  #info {
+-    position: fixed; top: 18px; left: 22px; z-index: 10;
+-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+-    color: rgba(235,240,250,0.6);
+-    font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+-    pointer-events: none;
+-  }
+-</style>
+-<script type="importmap">
+-{
+-  "imports": {
+-    "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js",
+-    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/"
+-  }
+-}
+-</script>
++<link rel="stylesheet" href="css/main.css">
++<link rel="stylesheet" href="css/three-demo.css">
+ </head>
+ <body>
+ <div id="info">Drag to orbit · scroll to zoom · click Mars</div>
