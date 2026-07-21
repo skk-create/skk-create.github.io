@@ -103,3 +103,43 @@
   border-radius: 3px;
   background: linear-gradient(90deg, #3a86ff, #ffb703);
 }
+
+/* Extra klassen ter vervanging van de inline stijlen */
+.diagnostics-container {
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.diagnostics-container h2, 
+.diagnostics-container h3, 
+.diagnostics-container p {
+  font-family: inherit;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section-subtitle {
+  color: #aaa;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.skill-category-title {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #ffb703;
+  letter-spacing: 1px;
+}
+
+/* Zorg dat de voortgangsbalkkleur via CSS wordt geregeld i.p.v. inline */
+.progress-fill {
+  background: #dd0404 !important;
+  height: 100%;
+  border-radius: 3px;
+}
