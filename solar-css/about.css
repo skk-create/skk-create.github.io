@@ -10,7 +10,7 @@
   --p-glow-soft: rgba(240, 207, 142, 0.12);
 }
 
-/* ---------- "mission log" timeline ---------- */
+
 .log-timeline {
   position: relative;
   padding-left: 28px;
@@ -36,7 +36,7 @@
 .log-title { font-size: 17px; margin: 0 0 8px; color: var(--text-bright); }
 .log-text { color: var(--text-dim); font-size: 14px; line-height: 1.7; margin: 0; }
 
-/* ---------- SYSTEM DIAGNOSTICS & SKILLS ---------- */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -92,7 +92,7 @@
   background: #ffb703;
 }
 
-/* ---------- SYSTEM DIAGNOSTICS & SKILLS GRID ---------- */
+
 .diagnostics-container {
   width: 100%;
 }

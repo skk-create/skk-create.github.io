@@ -1,8 +1,8 @@
 :root {
-    --bg-color: #f0f4f8;       /* Very light atmospheric blue */
-    --primary-color: #00a8ff;  /* Bright neon sky blue */
-    --text-color: #1A1A24;     /* Dark gray/blue for text */
-    --glass-bg: rgba(255, 255, 255, 0.6); /* Translucent white for glass effect */
+    --bg-color: #f0f4f8;       
+    --primary-color: #00a8ff;  
+    --text-color: #1A1A24;     
+    --glass-bg: rgba(255, 255, 255, 0.6); 
     --glass-border: rgba(255, 255, 255, 0.8);
     --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
@@ -41,14 +41,14 @@ h1, h2, h3 {
     padding: 80px 0;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     background: var(--glass-bg);
-    backdrop-filter: blur(10px); /* Creates the frosted glass look */
+    backdrop-filter: blur(10px); 
     border-bottom: 1px solid var(--glass-border);
     position: sticky;
     top: 0;
@@ -94,7 +94,7 @@ h1, h2, h3 {
     filter: drop-shadow(0 0 8px var(--primary-color));
 }
 
-/* Hero Section */
+
 .hero {
     padding: 100px 0;
 }
@@ -136,10 +136,10 @@ h1, h2, h3 {
     border-radius: 50%;
    border: 4px solid rgba(255, 255, 255, 0.8) !important;
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.5) !important;
-    background-color: #008be6; /* Placeholder color if image is missing */
+    background-color: #008be6; 
 }
 
-/* Buttons */
+
 .btn {
     display: inline-block;
     background-color: var(--primary-color);
@@ -158,7 +158,7 @@ h1, h2, h3 {
     box-shadow: 0 8px 20px rgba(0, 168, 255, 0.4);
 }
 
-/* Glass Cards */
+
 .grid-2-cols {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -205,7 +205,7 @@ footer {
     }
 }
 
-/* Transition Effect Class */
+
 .blue-colour-effect {
     background: #000 !important;
     opacity: 0;
@@ -213,8 +213,8 @@ footer {
 }
 
 .logo-img {
-  height: 45px;     /* Hiermee maak je het logo mooi klein voor in de header */
-  width: auto;      /* Zorgt dat de verhoudingen netjes kloppen */
+  height: 45px;     
+  width: auto;     
   display: block;   
 }
 
@@ -226,7 +226,7 @@ footer {
   width: 100%;
 }
 
-/* Zorg dat de navbar de elementen naar links en rechts duwt */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -235,7 +235,7 @@ footer {
   width: 100%;
 }
 
-/* De styling van de maan-switch */
+
 .theme-switch {
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -251,20 +251,19 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Zorg dat de knop en links netjes als blok handelen en geen vreemde onderranden krijgen */
 .theme-switch {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; /* Haalt eventuele onderstreping weg */
+  text-decoration: none; 
 }
 
-/* Zorg dat logo's of afbeeldingen in links geen extra ruimte of zwarte balk eronder krijgen */
+
 .navbar a img {
   display: block;
 }
 
-/* Een leuk interactief effect als je er met je muis overgaat */
+
 .theme-switch:hover {
   transform: scale(1.1);
   background: #ffffff;
@@ -295,7 +294,7 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Dit haalt alle kleur uit de emoji en maakt hem prachtig grijs */
+
 .theme-switch span, 
 .theme-switch {
   filter: grayscale(100%);
@@ -307,7 +306,7 @@ footer {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* 1. Cursor herstellen op de index pagina */
+
 body {
     cursor: default !important;
 }
@@ -327,8 +326,8 @@ img.profile-img,
     max-height: 350px !important;
     object-fit: cover !important;
     border-radius: 50% !important;
-    flex-shrink: 0 !important;      /* Voorkomt dat flexbox de breedte samendrukt */
-    align-self: center !important;   /* Voorkomt dat flexbox de hoogte uitrekst */
+    flex-shrink: 0 !important;      
+    align-self: center !important;  
 box-shadow: 0 0 30px rgba(0, 168, 255, 0.5), 
                 0 0 60px rgba(0, 168, 255, 0.25) !important;
 }

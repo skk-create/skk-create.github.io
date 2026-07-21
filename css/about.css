@@ -8,7 +8,7 @@
   --p-glow-soft: rgba(240, 207, 142, 0.12);
 }
 
-/* ---------- "mission log" timeline ---------- */
+
 .log-timeline {
   position: relative;
   padding-left: 28px;
@@ -34,7 +34,7 @@
 .log-title { font-size: 17px; margin: 0 0 8px; color: var(--text-bright); }
 .log-text { color: var(--text-dim); font-size: 14px; line-height: 1.7; margin: 0; }
 
-/* ---------- SYSTEM DIAGNOSTICS & SKILLS GRID ---------- */
+
 .diagnostics-container {
   width: 100%;
 }
@@ -104,7 +104,7 @@
   background: linear-gradient(90deg, #3a86ff, #ffb703);
 }
 
-/* Extra klassen ter vervanging van de inline stijlen */
+
 .diagnostics-container {
   margin-bottom: 60px;
   width: 100%;
@@ -137,7 +137,7 @@
   letter-spacing: 1px;
 }
 
-/* Progress bar percentages via CSS i.p.v. inline styles */
+
 .progress-fill.p-12 { width: 12%; }
 .progress-fill.p-25 { width: 25%; }
 .progress-fill.p-50 { width: 50%; }

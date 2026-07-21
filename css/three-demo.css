@@ -1,4 +1,4 @@
-/* Page-specific styles for the Three.js proof-of-concept page. */
+
 body {
   height: 100%;
   overflow: hidden;
@@ -27,11 +27,11 @@ canvas {
 }
 
 .logo-img {
-  height: 50px; /* Pas deze hoogte aan naar wens */
-  width: auto;   /* Zorgt ervoor dat de verhoudingen kloppen */
+  height: 50px; 
+  width: auto;   
 }
 
-/* Zorg dat de footer altijd netjes onderaan de pagina blijft staan */
+
 body {
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@ body {
 }
 
 main {
-  flex: 1; /* Duwt de footer automatisch naar beneden */
+  flex: 1; 
 }
 
 footer {
@@ -51,17 +51,17 @@ footer {
   width: 100%;
 }
 
-/* Styling voor je echte profielfoto */
+
 .profile-pic, .hero-image img {
   width: 100%;
   max-width: 350px;
   height: auto;
-  border-radius: 50%; /* Maakt de foto mooi rond */
+  border-radius: 50%; 
   object-fit: cover;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Voor schermen smaller dan 768px (tablets en telefoons) */
+
 @media (max-width: 768px) {
   .container, 
   .solar-system-container, 
@@ -72,7 +72,7 @@ footer {
     width: 100% !important;
   }
 
-  /* Zorg dat de individuele elementen onder elkaar passen en niet te breed zijn */
+  
   .glass-card, 
   .skill-card, 
   .planet-item {

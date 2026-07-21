@@ -82,7 +82,7 @@ html, body {
   cursor: pointer;
 }
 
-/* NEW */
+
 .solar-flare {
   position: absolute;
   border-radius: 50%;
@@ -279,7 +279,7 @@ body.hide-ambient .alien-ship {
 }
 #sun-blackout.is-active { opacity: 1; }
 
-/* Shooting star — slowed down considerably (was racing across the screen) */
+
 .shooting-star {
   position: fixed;
   width: 3px; height: 3px;
@@ -313,7 +313,7 @@ body.hide-ambient .alien-ship {
   z-index: 2;
   min-height: 100vh;
   background-image:
-   /* NEW */
+   
 linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
     url('../img/textures/deep-space.jpg'),
     radial-gradient(ellipse at 50% 0%, var(--bg-mid) 0%, var(--bg-deep) 60%);
@@ -464,7 +464,7 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
 #star-portrait { width: 100%; height: auto; display: block; }
 .portrait-outline { fill: none; stroke: rgba(238,242,251,0.18); stroke-width: 1.5; }
 
-/* ---------- footer (injected by main.js on every page) ---------- */
+
 #site-footer {
   position: relative;
   z-index: 2;
@@ -507,7 +507,7 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   text-align: center;
 }
 
-/* ---------- SYSTEM DIAGNOSTICS & SKILLS ---------- */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

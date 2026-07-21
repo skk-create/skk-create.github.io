@@ -43,7 +43,7 @@
       return;
     }
 
-    /* ---- Option A (active): open a pre-filled email ---- */
+    
     const subject = encodeURIComponent(`Portfolio message from ${name}`);
     const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
     window.location.href = `mailto:${YOUR_EMAIL}?subject=${subject}&body=${body}`;

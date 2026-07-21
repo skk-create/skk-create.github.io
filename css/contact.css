@@ -1,5 +1,3 @@
-/* Mars — rusty and mottled, with a small polar ice cap.
-   Drop img/textures/mars.jpg in and it's used automatically (see main.css .full-planet). */
 :root {
   --p-texture: url('../img/textures/mars.jpg');
   --p-light: #f2b48c;
@@ -18,7 +16,7 @@
   border-radius: 50%;
 }
 
-/* ---------- "transmission console" contact section ---------- */
+
 .content-lede { margin-bottom: 40px; }
 
 .console-grid {

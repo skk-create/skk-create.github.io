@@ -14,7 +14,7 @@
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isTouch = window.matchMedia('(pointer: coarse)').matches;
 
-  /* ---------- hide astronaut/drifters/passers-by over the portrait section ---------- */
+  
   const portraitSectionEl = document.getElementById('portrait-section');
   if (portraitSectionEl) {
     const ambientObserver = new IntersectionObserver((entries) => {
@@ -25,7 +25,7 @@
     ambientObserver.observe(portraitSectionEl);
   }
 
-  /* ---------- background depth ---------- */
+  
   const nebulaEl = document.createElement('div');
   nebulaEl.id = 'nebula';
   document.body.appendChild(nebulaEl);
