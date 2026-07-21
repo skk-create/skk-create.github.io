@@ -137,9 +137,12 @@
   letter-spacing: 1px;
 }
 
-/* Zorg dat de voortgangsbalkkleur via CSS wordt geregeld i.p.v. inline */
+/* Progress bar percentages via CSS i.p.v. inline styles */
+.progress-fill.p-12 { width: 12%; }
+.progress-fill.p-25 { width: 25%; }
+.progress-fill.p-50 { width: 50%; }
 .progress-fill {
-  background: #dd0404 !important;
   height: 100%;
   border-radius: 3px;
+  background: #dd0404 !important;
 }
