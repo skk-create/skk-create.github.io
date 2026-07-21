@@ -520,3 +520,22 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   max-width: 150px !important;
 }
 
+/* Voor schermen smaller dan 768px (tablets en telefoons) */
+@media (max-width: 768px) {
+  .container, 
+  .solar-system-container, 
+  .skills-grid {
+    flex-direction: column !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  /* Zorg dat de individuele elementen onder elkaar passen en niet te breed zijn */
+  .glass-card, 
+  .skill-card, 
+  .planet-item {
+    width: 90% !important;
+    margin-bottom: 20px !important;
+  }
+}

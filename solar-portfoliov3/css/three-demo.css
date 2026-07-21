@@ -60,3 +60,23 @@ footer {
   object-fit: cover;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
+
+/* Voor schermen smaller dan 768px (tablets en telefoons) */
+@media (max-width: 768px) {
+  .container, 
+  .solar-system-container, 
+  .skills-grid {
+    flex-direction: column !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  /* Zorg dat de individuele elementen onder elkaar passen en niet te breed zijn */
+  .glass-card, 
+  .skill-card, 
+  .planet-item {
+    width: 90% !important;
+    margin-bottom: 20px !important;
+  }
+}
