@@ -30,3 +30,33 @@ canvas {
   height: 50px; /* Pas deze hoogte aan naar wens */
   width: auto;   /* Zorgt ervoor dat de verhoudingen kloppen */
 }
+
+/* Zorg dat de footer altijd netjes onderaan de pagina blijft staan */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1; /* Duwt de footer automatisch naar beneden */
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: transparent;
+  color: inherit;
+  width: 100%;
+}
+
+/* Styling voor je echte profielfoto */
+.profile-pic, .hero-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 50%; /* Maakt de foto mooi rond */
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}

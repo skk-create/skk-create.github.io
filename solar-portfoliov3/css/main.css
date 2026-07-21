@@ -414,10 +414,9 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   z-index: 2;
   min-height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 60px;
+  justify-content: center; /* Zet alles netjes horizontaal in het midden */
+  text-align: center;      /* Centreert ook al je tekst */
   padding: 110px 24px;
   background-image:
     radial-gradient(ellipse at 50% 0%, rgba(11,17,32,0.55) 0%, rgba(5,7,13,0.85) 100%),
@@ -428,7 +427,11 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   background-attachment: fixed, fixed, fixed;
 }
 
-.portrait-copy { max-width: 440px; }
+.portrait-copy { 
+  max-width: 700px; /* Maakt de tekstregel iets breder zodat het mooi gecentreerd oogt */
+  margin: 0 auto;
+}
+
 .eyebrow-fancy {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
@@ -437,6 +440,7 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   color: var(--text-dim);
   margin: 0 0 12px;
 }
+
 .fancy-heading {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
@@ -445,15 +449,13 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   margin: 0 0 22px;
   color: var(--text-bright);
 }
+
 .fancy-body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 19px;
   line-height: 1.8;
   color: var(--text-dim);
 }
-.portrait-wrap { width: min(320px, 80vw); }
-#star-portrait { width: 100%; height: auto; display: block; }
-.portrait-outline { fill: none; stroke: rgba(238,242,251,0.18); stroke-width: 1.5; }
 
 /* ---------- footer (injected by main.js on every page) ---------- */
 #site-footer {
@@ -522,3 +524,5 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   margin: 0;
   padding: 0;
 }
+
+
