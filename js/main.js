@@ -543,10 +543,7 @@ if (flareHost) {
           <a href="work.html">Work</a>
           <a href="contact.html">Contact</a>
         </nav>
-        <div class="footer-social">
-          <a href="#" aria-label="GitHub" title="GitHub">GH</a>
-          <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
-        </div>
+        
       </div>
       <p class="footer-copyright">&copy; 2026 Hyperspace Gate. All rights reserved.</p>
     </footer>
