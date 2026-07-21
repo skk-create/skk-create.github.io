@@ -1,0 +1,118 @@
+diff --git a/about.html b/about.html
+index 0052343..f83389a 100644
+--- a/about.html
++++ b/about.html
+@@ -8,6 +8,9 @@
+ <link rel="stylesheet" href="css/about.css">
+ </head>
+ <body>
++<a href="index.html" class="site-logo" aria-label="Home">
++  <img src="img/logo.svg" alt="SK logo">
++</a>
+ 
+ <a class="back-link" href="index.html">← back to the solar system</a>
+ 
+diff --git a/contact.html b/contact.html
+index 05f6697..ee98f55 100644
+--- a/contact.html
++++ b/contact.html
+@@ -8,6 +8,9 @@
+ <link rel="stylesheet" href="css/contact.css">
+ </head>
+ <body>
++<a href="index.html" class="site-logo" aria-label="Home">
++  <img src="img/logo.svg" alt="SK logo">
++</a>
+ 
+ <a class="back-link" href="index.html">← back to the solar system</a>
+ 
+diff --git a/css/main.css b/css/main.css
+index 80fc0af..728de8d 100644
+--- a/css/main.css
++++ b/css/main.css
+@@ -409,6 +409,15 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
+ }
+ .back-link:hover { color: var(--text-bright); }
+ 
++.site-logo {
++  position: fixed; top: 18px; right: 26px; z-index: 30;
++  display: block;
++  opacity: 0.92;
++  transition: opacity 0.2s ease;
++}
++.site-logo:hover { opacity: 1; }
++.site-logo img { width: 44px; height: 44px; display: block; }
++
+ #portrait-section {
+   position: relative;
+   z-index: 2;
+diff --git a/img/logo.svg b/img/logo.svg
+new file mode 100644
+index 0000000..e9c7099
+--- /dev/null
++++ b/img/logo.svg
+@@ -0,0 +1,8 @@
++<svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
++  <text x="5" y="48" font-family="Arial, sans-serif" font-weight="900" font-size="38" fill="#1A1A24">S</text>
++  <text x="34" y="48" font-family="Arial, sans-serif" font-weight="900" font-size="38" fill="#1A1A24">K</text>
++  <line x1="20" y1="50" x2="28" y2="54" stroke="#bcdcfb" stroke-width="2" stroke-linecap="round"/>
++  <line x1="15" y1="57" x2="25" y2="61" stroke="#bcdcfb" stroke-width="2" stroke-linecap="round"/>
++  <path d="M88,58 L30,66 L38,90 Z" fill="#00a8ff"/>
++  <path d="M88,58 L55,70 L38,90 Z" fill="#0086cc"/>
++</svg>
+diff --git a/index.html b/index.html
+index 1aea15a..f31a1bc 100644
+--- a/index.html
++++ b/index.html
+@@ -10,6 +10,9 @@
+ <link rel="stylesheet" href="css/main.css">
+ </head>
+ <body>
++<a href="index.html" class="site-logo" aria-label="Home">
++  <img src="img/logo.svg" alt="SK logo">
++</a>
+ 
+ <div id="stage">
+   <div id="hint">Greetings, Human</div>
+diff --git a/skills.html b/skills.html
+index 0c177ff..a448227 100644
+--- a/skills.html
++++ b/skills.html
+@@ -8,6 +8,9 @@
+ <link rel="stylesheet" href="css/skills.css">
+ </head>
+ <body>
++<a href="index.html" class="site-logo" aria-label="Home">
++  <img src="img/logo.svg" alt="SK logo">
++</a>
+ 
+ <a class="back-link" href="index.html">← back to the solar system</a>
+ 
+diff --git a/three-demo.html b/three-demo.html
+index 4be3872..57183df 100644
+--- a/three-demo.html
++++ b/three-demo.html
+@@ -8,6 +8,9 @@
+ <link rel="stylesheet" href="css/three-demo.css">
+ </head>
+ <body>
++<a href="index.html" class="site-logo" aria-label="Home">
++  <img src="img/logo.svg" alt="SK logo">
++</a>
+ <div id="info">Drag to orbit · scroll to zoom · click Mars</div>
+ <script type="module" src="js/three-demo.js"></script>
+ </body>
+diff --git a/work.html b/work.html
+index 997f15f..8ccbe6b 100644
+--- a/work.html
++++ b/work.html
+@@ -8,6 +8,9 @@
+ <link rel="stylesheet" href="css/work.css">
+ </head>
+ <body>
++<a href="index.html" class="site-logo" aria-label="Home">
++  <img src="img/logo.svg" alt="SK logo">
++</a>
+ 
+ <a class="back-link" href="index.html">← back to the solar system</a>
+ 

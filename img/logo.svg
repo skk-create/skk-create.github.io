@@ -1,0 +1,8 @@
+<svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="5" y="48" font-family="Arial, sans-serif" font-weight="900" font-size="38" fill="#1A1A24">S</text>
+  <text x="34" y="48" font-family="Arial, sans-serif" font-weight="900" font-size="38" fill="#1A1A24">K</text>
+  <line x1="20" y1="50" x2="28" y2="54" stroke="#bcdcfb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="15" y1="57" x2="25" y2="61" stroke="#bcdcfb" stroke-width="2" stroke-linecap="round"/>
+  <path d="M88,58 L30,66 L38,90 Z" fill="#00a8ff"/>
+  <path d="M88,58 L55,70 L38,90 Z" fill="#0086cc"/>
+</svg>
