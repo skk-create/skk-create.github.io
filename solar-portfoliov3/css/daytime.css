@@ -251,6 +251,19 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* Zorg dat de knop en links netjes als blok handelen en geen vreemde onderranden krijgen */
+.theme-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Haalt eventuele onderstreping weg */
+}
+
+/* Zorg dat logo's of afbeeldingen in links geen extra ruimte of zwarte balk eronder krijgen */
+.navbar a img {
+  display: block;
+}
+
 /* Een leuk interactief effect als je er met je muis overgaat */
 .theme-switch:hover {
   transform: scale(1.1);
@@ -293,4 +306,5 @@ footer {
   background: rgb(221, 18, 18);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
 }
+
 

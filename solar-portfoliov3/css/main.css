@@ -123,17 +123,6 @@ html, body {
   from { background-position: 0 center, center, center, center, center; }
   to   { background-position: -1500px center, center, center, center, center; }
 }
-
-.body-el.mercury {
-  left: 12.5%; width: 20px; height: 20px;
-  background-image: url('../img/textures/mercury.jpg'),
-    radial-gradient(circle at 72% 38%, #cfccc4, #9b968c 55%, #656058 100%);
-  background-size: auto 100%, cover;
-  background-repeat: repeat-x, no-repeat;
-  background-position: 0 center, center;
-  box-shadow: 0 0 10px 2px rgba(155,150,140,0.3);
-  animation: miniPlanetSpin 100s linear infinite;
-}
 .body-el.venus {
   left: 25%; width: 36px; height: 36px;
   background-image: url('../img/textures/venus.jpg'),
@@ -524,5 +513,10 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   margin: 0;
   padding: 0;
 }
-
+/* Zorg dat het SK logo overal netjes klein blijft */
+.logo-img, img[alt*="SK Logo"], header img {
+  height: 45px !important;
+  width: auto !important;
+  max-width: 150px !important;
+}
 
