@@ -123,17 +123,6 @@ html, body {
   from { background-position: 0 center, center, center, center, center; }
   to   { background-position: -1500px center, center, center, center, center; }
 }
-
-.body-el.mercury {
-  left: 12.5%; width: 20px; height: 20px;
-  background-image: url('../img/textures/mercury.jpg'),
-    radial-gradient(circle at 72% 38%, #cfccc4, #9b968c 55%, #656058 100%);
-  background-size: auto 100%, cover;
-  background-repeat: repeat-x, no-repeat;
-  background-position: 0 center, center;
-  box-shadow: 0 0 10px 2px rgba(155,150,140,0.3);
-  animation: miniPlanetSpin 100s linear infinite;
-}
 .body-el.venus {
   left: 25%; width: 36px; height: 36px;
   background-image: url('../img/textures/venus.jpg'),
@@ -409,24 +398,14 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
 }
 .back-link:hover { color: var(--text-bright); }
 
-.site-logo {
-  position: fixed; top: 18px; right: 26px; z-index: 30;
-  display: block;
-  opacity: 0.92;
-  transition: opacity 0.2s ease;
-}
-.site-logo:hover { opacity: 1; }
-.site-logo img { width: 44px; height: 44px; display: block; }
-
 #portrait-section {
   position: relative;
   z-index: 2;
   min-height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 60px;
+  justify-content: center; /* Zet alles netjes horizontaal in het midden */
+  text-align: center;      /* Centreert ook al je tekst */
   padding: 110px 24px;
   background-image:
     radial-gradient(ellipse at 50% 0%, rgba(11,17,32,0.55) 0%, rgba(5,7,13,0.85) 100%),
@@ -437,7 +416,11 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   background-attachment: fixed, fixed, fixed;
 }
 
-.portrait-copy { max-width: 440px; }
+.portrait-copy { 
+  max-width: 700px; /* Maakt de tekstregel iets breder zodat het mooi gecentreerd oogt */
+  margin: 0 auto;
+}
+
 .eyebrow-fancy {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
@@ -446,6 +429,7 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   color: var(--text-dim);
   margin: 0 0 12px;
 }
+
 .fancy-heading {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
@@ -454,15 +438,13 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   margin: 0 0 22px;
   color: var(--text-bright);
 }
+
 .fancy-body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 19px;
   line-height: 1.8;
   color: var(--text-dim);
 }
-.portrait-wrap { width: min(320px, 80vw); }
-#star-portrait { width: 100%; height: auto; display: block; }
-.portrait-outline { fill: none; stroke: rgba(238,242,251,0.18); stroke-width: 1.5; }
 
 /* ---------- footer (injected by main.js on every page) ---------- */
 #site-footer {
@@ -505,4 +487,55 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   letter-spacing: 1px;
   color: var(--text-dim);
   text-align: center;
+}
+
+/* De navigatiebalk: zet logo links en menu rechts */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+/* Maak het logo hier kleiner (pas '50px' aan als je hem groter of kleiner wilt) */
+.logo-img {
+  height: 50px; 
+  width: auto;
+  display: block;
+}
+
+/* Het menu netjes Naast elkaar zetten */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Ruimte tussen de menu-items */
+  margin: 0;
+  padding: 0;
+}
+/* Zorg dat het SK logo overal netjes klein blijft */
+.logo-img, img[alt*="SK Logo"], header img {
+  height: 45px !important;
+  width: auto !important;
+  max-width: 150px !important;
+}
+
+/* Voor schermen smaller dan 768px (tablets en telefoons) */
+@media (max-width: 768px) {
+  .container, 
+  .solar-system-container, 
+  .skills-grid {
+    flex-direction: column !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  /* Zorg dat de individuele elementen onder elkaar passen en niet te breed zijn */
+  .glass-card, 
+  .skill-card, 
+  .planet-item {
+    width: 90% !important;
+    margin-bottom: 20px !important;
+  }
 }

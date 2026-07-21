@@ -542,8 +542,9 @@ if (flareHost) {
           <a href="about.html">About</a>
           <a href="work.html">Work</a>
           <a href="contact.html">Contact</a>
-        </nav>
         
+        </nav>
+
       </div>
       <p class="footer-copyright">&copy; 2026 Hyperspace Gate. All rights reserved.</p>
     </footer>
