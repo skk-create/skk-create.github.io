@@ -257,3 +257,39 @@ footer {
   background: #ffffff;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.theme-switch {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Dit haalt alle kleur uit de emoji en maakt hem prachtig grijs */
+.theme-switch span, 
+.theme-switch {
+  filter: grayscale(100%);
+}
+
+.theme-switch:hover {
+  transform: scale(1.1);
+  background: rgb(221, 18, 18);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
