@@ -1,0 +1,20 @@
+/* Page-specific styles for the Three.js proof-of-concept page. */
+body {
+  height: 100%;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+}
+#info {
+  position: fixed;
+  top: 18px;
+  left: 22px;
+  z-index: 10;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: rgba(235, 240, 250, 0.6);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
