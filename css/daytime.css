@@ -331,3 +331,17 @@ img.profile-img,
 box-shadow: 0 0 30px rgba(0, 168, 255, 0.5), 
                 0 0 60px rgba(0, 168, 255, 0.25) !important;
 }
+
+/* Card Header Logo Uitlijning */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.header-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
