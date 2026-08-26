@@ -519,7 +519,19 @@ linear-gradient(rgba(6,9,16,0.6), rgba(6,9,16,0.6)),
   width: auto !important;
   max-width: 150px !important;
 }
+/* Card Header Logo Alignment */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
 
+.header-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
 
 @media (max-width: 768px) {
   .container, 
